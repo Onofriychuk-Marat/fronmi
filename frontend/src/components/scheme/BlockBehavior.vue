@@ -162,7 +162,6 @@ export default defineComponent({
   },
   methods: {
     isCanShowButton(index: number) {
-      // console.log('>>> ', )
       let max;
       if (this.updatedBehavior.isInlineButton) {
         max = this.restrictions?.inlineButton?.maxcount || 0;

@@ -25,19 +25,20 @@ export class ManagerChannel {
       this.remove(channelEntity);
     }
     this.run(channelEntity);
+    console.log('update')
   }
 
   public run(channelEntity: ChannelEntity) {
     if (!this.isCanRun(channelEntity)) {
-      return
+      return;
     }
     if (this.channels.has(channelEntity.id)) {
       return;
     }
-    console.log('run')
     const channel = this.getServiceChannel(channelEntity);
     this.channels.set(channelEntity.id, channel);
     channel.start();
+    console.log('run')
   }
 
   private isCanRun(channelEntity: ChannelEntity) {

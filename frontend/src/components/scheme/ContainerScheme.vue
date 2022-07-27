@@ -146,6 +146,9 @@ export default defineComponent({
           }
         }
       );
+      if (behavior.isStart && updatedScenario.value.behaviors.length) {
+        updatedScenario.value.behaviors[0].isStart = true;
+      }
     };
     const addBehavior = () => {
       let maxId = 0;
