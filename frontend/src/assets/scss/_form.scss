@@ -1,0 +1,21 @@
+.form {
+  &__title {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 18px;
+    text-align: center;
+
+    color: #292928;
+    margin-bottom: 10px;
+  }
+  &__input-wrap {
+    & + & {
+      margin-top: 10px;
+    }
+  }
+  &__button-wrap {
+    margin-top: 10px;
+  }
+}

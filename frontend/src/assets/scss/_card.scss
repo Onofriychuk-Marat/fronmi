@@ -1,0 +1,37 @@
+.card {
+  background: rgba(255, 255, 255, 0.7);
+  border: 2px solid #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(17px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 17px;
+
+  &__title {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 18px;
+
+    color: #292928;
+  }
+
+  &__text {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 15px;
+
+    color: #292928;
+  }
+
+  &_big {
+    padding: 15px;
+  }
+
+  &_small {
+    padding: 10px;
+  }
+}
